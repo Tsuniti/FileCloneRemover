@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCloneRemover", "FileCloneRemover.csproj", "{065F6EE4-CB47-483B-87E9-66B4D4089F8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{065F6EE4-CB47-483B-87E9-66B4D4089F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{065F6EE4-CB47-483B-87E9-66B4D4089F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{065F6EE4-CB47-483B-87E9-66B4D4089F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{065F6EE4-CB47-483B-87E9-66B4D4089F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0C2E9B9-D82B-4ADD-9B55-229F85566A20}
+	EndGlobalSection
+EndGlobal
