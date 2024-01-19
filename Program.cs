@@ -1,49 +1,61 @@
-﻿using System.Diagnostics;
+﻿using FileCloneRemover;
+using System.Diagnostics;
 
 string path = @"C:\Users\Tsuni\Desktop\13.01.2024";
 
-//string firstContent = File.ReadAllText(path + @"\one.txt");
-//string secondContent = File.ReadAllText(path + @"\two.txt");
+/*string firstContent = File.ReadAllText(path + @"\one.txt");
+string secondContent = File.ReadAllText(path + @"\two.txt");
 
-//Console.WriteLine(firstContent);
-//Console.WriteLine(secondContent);
-
+Console.WriteLine(firstContent);
+Console.WriteLine(secondContent);
 Stopwatch stopwatch = new Stopwatch();
 
 Console.WriteLine("Start");
 stopwatch.Start();
+*/
 
-string[] files = Directory.GetFiles(path);
+//string[] files = Directory.GetFiles(path);
+//string[] directories = Directory.GetDirectories(path);
 
-//for (int i = 0; i < files.Count; i++)
+//foreach (var item in directories)
 //{
-//    string leftFile = File.ReadAllText(files[i]);
+//    Console.WriteLine(Directory.GetParent(path));
+//}
 
-//    for (int j = i + 1; j < files.Count; j++)
+/*for (int i = 0; i < files.Count; i++)
+{
+   string leftFile = File.ReadAllText(files[i]);
+
+   for (int j = i + 1; j < files.Count; j++)
+   {
+       string rightFile = File.ReadAllText(files[j]);
+
+       if(leftFile == rightFile)
+       {
+           File.Delete(files[j]);
+           files.RemoveAt(j);
+           j--;
+       }
+   }
+}
+*/
+//HashSet<string> uniqueContent = new HashSet<string>();
+
+//foreach (string file in files)
+//{
+
+//    string fileContent = File.ReadAllText(file);
+
+//    if (!uniqueContent.Add(fileContent))
 //    {
-//        string rightFile = File.ReadAllText(files[j]);
-
-//        if(leftFile == rightFile)
-//        {
-//            File.Delete(files[j]);
-//            files.RemoveAt(j);
-//            j--;
-//        }
+//        File.Delete(file);
 //    }
 //}
 
-HashSet<string> uniqueContent = new HashSet<string>();
+// stopwatch.Stop();
+// Console.WriteLine("Finish");
+// Console.WriteLine(stopwatch.ElapsedMilliseconds);
 
-foreach (string file in files)
-{
 
-    string fileContent = File.ReadAllText(file);
-
-    if (!uniqueContent.Add(fileContent))
-    {
-        File.Delete(file);
-    }
-}
-stopwatch.Stop();
-Console.WriteLine("Finish");
-Console.WriteLine(stopwatch.ElapsedMilliseconds);
+var function = new RecursiveFunction();
+function.CheckDirectories(path);
